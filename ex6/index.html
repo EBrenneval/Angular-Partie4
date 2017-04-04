@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Enoncé de l'exercice
+Faire une page HTML contenant deux paragrahes et deux boutons. 
+Au clic sur le premier uniquement le paragrahe 1 doit être visible. 
+Au clic sur le bouton deux, seulement le paragrahe 2 doit aparaître.
+-->
+<html>
+    <head>
+        <title>Partie4,ex6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-app="">
+        <h1>Exercice 6</h1>
+        <div class="ex">
+            <p ng-hide="Show">  Le Pur Sang, ou pur-sang anglais, est la plus connue des races de chevaux à sang chaud
+                et l'une des plus répandues, puisque c'est celle qui court sur les pistes d'hippodromes lors des courses de galop.
+                Bien que le nom de pur sang puisse faire référence en théorie à n'importe quelle race animale, 
+                il désigne en réalité uniquement ces chevaux, le nom de pur-sang anglais étant un pléonasme aux yeux des puristes. 
+                L'abréviation officielle est PS.</p>
+            <p ng-show="Show">Le Pure race espagnole ou PRE (Pura Raza Española),Cheval facilement identifiable avec sa robe très souvent grise, 
+                le Pure race espagnole possède un corps compact, une encolure massive et un aspect très élégant, 
+                notamment grâce à sa longue crinière ondulée. Ses allures sont caractéristiques car souvent relevées, 
+                avec une aptitude naturelle au piaffer et au passage</p>
+            <button type="button" name="show" ng-click="Show = false">Affiche paragraphe 1</button>
+            <button type="button" name="show"ng-click="Show = true">Affiche paragraphe 2</button>
+        </div>
+        <a href="../ex5/index.html"><button id="previous" type="button" name="button">Exercice précédent</button></a>
+        <a href="../ex/index.html"><button id="next" type="button" name="button">Retour au premier exo</button></a>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+h1{
+    color:blueviolet;
+    text-decoration: underline;
+    text-align: center;
+}
+div{
+    background-color: silver;
+    height: 100px;
+    width: 400px;
+    margin-left: 30%;
+    text-align: center;
+}
+#next{
+    margin-left: 50%;
+}

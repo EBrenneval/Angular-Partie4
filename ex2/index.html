@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Partie4, ex2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="angular.js" type="text/javascript"></script>
+    </head>
+   
+    <body ng-app="myApp">
+            
+        <h1>Exercice 2</h1>
+        <div ng-controller="myCtrl">         
+        <p  ng-repeat="article in articles"> {{article.marque + " " + article.couleur}}</p>
+        </div>
+        
+        
+        <script>
+            var app = angular.module('myApp', []);
+                       app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
+                               $http.get('voiture.json').then(function (data) {
+                                   $scope.articles = data.data;  
+                               });
+                           }]);
+          </script>
+        <a href="../ex1/index.html"><button id="previous" type="button" name="button">Exercice précédent</button></a>
+        <a href="../ex3/index.html"><button id="next" type="button" name="button">Exercice suivant</button></a>
+        
+        </body>
+</html>

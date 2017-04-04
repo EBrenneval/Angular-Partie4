@@ -1,0 +1,18 @@
+h1{
+    color:blueviolet;
+    text-decoration: underline;
+    text-align: center;
+}
+div{
+    background-color: silver;
+    height: 250px;
+    width: 400px;
+    margin-left: 30%;
+    text-align: center;
+}
+#previous{
+    margin-left: 30%;
+}
+#next{
+    margin-left: 7.5%;
+}
